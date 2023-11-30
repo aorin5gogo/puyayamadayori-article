@@ -1,0 +1,257 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header-area{
+    background-color: #3C6255;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 15%;
+}
+
+.logo-img{
+    width: 100%;
+}
+
+.login,.search{
+    padding-top:5%;
+}
+
+.login:hover{
+    color: white;
+    opacity: 0.8;
+    cursor:default;
+}
+
+.fa-brands{
+    text-align:center;
+    padding-top:6%;
+}
+
+.fa-brands:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+
+.latest-article{
+    width: 100%;
+    display: flex;
+}
+
+.article-content img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.article-content img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.article-title{
+    position: absolute;
+    top:35%;
+
+}
+
+
+.kouzan{
+    background-color: blue;
+    color: #EAE7B1;
+}
+
+.women{
+    background-color: palevioletred;
+    color: #EAE7B1;
+}
+
+.lodging{
+    background-color:orangered;
+    color: #EAE7B1;
+}
+
+main{
+    margin-top:10%;
+    display: flex;
+}
+
+article{
+    width: 60%;
+}
+
+.main-content{
+    border:5px dotted #3C6255;
+    padding:5% 5% 15% 5%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:3%;
+    align-items: center;
+}
+
+.content-item{
+    position: relative;
+}
+
+
+.content-item p{
+    position: absolute;
+    top:5%;
+    left:3%;
+}
+
+.beginner{
+    background-color: #3C6255;
+    color: #EAE7B1;
+}
+
+.hyakumeizan{
+    background-color: purple;
+    color: #EAE7B1;
+}
+
+.yukiyama{
+    background-color:white;
+    color:#3C6255;
+}
+
+.content-item img{
+    width:100%;
+}
+
+.content-item img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content-text{
+    width: 100%;
+}
+
+
+.next-page p{
+    text-align: center;
+}
+
+.next-page div{
+    padding: 1% 2%;
+    text-align: right;
+}
+
+.next-page div>a{
+    color: #EAE7B1;
+    background-color: #61876E;
+    padding: 1% 2%;
+}
+
+.next-page a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+aside{
+    width: 30%;
+}
+
+.aside-container{
+    background-color:#EAE7B1;
+    padding:3%;
+}
+
+.title{
+    padding:0 3%;
+    border-bottom:1px solid #3C6255;
+    margin-bottom: 8%;
+}
+
+.category-nav li:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #3C6255;
+    margin-top:10%;
+    padding: 5% 0;
+}
+
+footer p{
+    text-align: center;
+    color: #EAE7B1;
+}
+
+.home{
+    color: #EAE7B1;
+
+}
+
+/* スクロールトップの設定 */
+
+#page-top{
+    position: fixed;
+    bottom:20px;
+    right: 20px;
+    z-index:2;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+#page-top a{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#A6BB8D;
+    border-radius: 50%;
+    width:60px;
+    height: 60px;
+    color:#fff6f4;
+    text-align: center;
+    padding-left:1%;
+    padding-right: 1%;
+}
+
+@keyframes UpAnime {
+    from{
+        opacity:0 ;
+        transform:translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.up-move{
+    animation:UpAnime 0.5s forwards;
+}
+
+
+@keyframes DownAnime {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+}
+
+.down-move{
+    animation:DownAnime 0.5s forwards;
+}

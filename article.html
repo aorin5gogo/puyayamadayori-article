@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ぷや山便り、記事一覧</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="article.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-area">
+            <div class="header-flex">
+                <h1 class="logo"><img src="images/puyayamadayori.png" class="logo-img"></h1>
+                <div class="login">ログイン/会員登録</div>
+                <i class="fa-brands fa-x-twitter fa-lg"></i>
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <i class="fa-brands fa-square-instagram fa-lg"></i>
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="top">
+        <h2>最新記事一覧</h2>
+        <div class="latest-article">
+            <div class="article-content">
+                <img src="images/mt_fuji.jpg">
+                <p class="article-title kouzan">高山</p>
+                <p>「夏の富士登山に潜む危険」</p>
+            </div>
+            <div class="article-content">
+                <img src="images/2792116_m_copy.jpg">
+                <p class="article-title women">女性向け</p>
+                「山ガールのファッションを調査！」
+            </div>
+            <div class="article-content">
+                <img src="images/raityouzawa_camp.jpg">
+                <p class="article-title lodging">宿泊</p>
+                <p>「予約なしで泊まれる！？テント泊の紹介」</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <article>
+            <div class="main-content">
+                <h2>記事一覧</h2>
+                <div class="grid">
+                    <div class="content-item">
+                        <p class="beginner tag">初心者向け</p>
+                        <img src="images/narukamiyama.jpg">
+                    </div>
+                    <div class="content-text">
+                        <p> 「初心者でも登りやすい！おすすめ登山スポット5選」</p>
+                    </div>
+                    <div class="content-item">
+                        <p class="hyakumeizan tag">日本百名山</p>
+                        <img src="images/kirigamine.jpg">
+                    </div>
+                    <div class="content-text">
+                        <p>「気軽にチャレンジ！日本百名山」</p>
+                    </div>
+                    <div class="content-item">
+                        <p class="women tag">女性向け</p>
+                        <img src="images/keshou.jpg">
+                    </div>
+                    <div class="content-text">
+                        <p>「登山でのお化粧どうする！？おすすめコスメの紹介」</p>
+                    </div>
+                    <div class="content-item">
+                        <p class="yukiyama tag">雪山</p>
+                        <img src="images/akagiyama.jpg">
+                    </div>
+                    <div class="content-text">
+                        <p>「雪山入門編！冬の赤城山を登ってみよう！」</p>
+                    </div>
+                    <div class="content-item">
+                        <p class="beginner tag">初心者向け</p>
+                        <img src="images/kusariba.jpg">
+                    </div>
+                    <div class="content-text">
+                        <p>「鎖場に挑戦しよう！まず何が必要？」</p>
+                    </div>
+                </div>
+            </div>
+            <div class="next-page">
+                <p>1/100件</p>
+                <div><a>次のページへ</a></div>
+            </div>
+        </article>
+        <aside>
+            <div class="aside-container">
+                <h2 class="title">カテゴリー</h2>
+                <ul class="category-nav">
+                    <li><a href="">初心者向け</a></li>
+                    <li><a href="">女性向け</a></li>
+                    <li><a href="">ハイキング</a></li>
+                    <li><a href="">低山</a></li>
+                    <li><a href="">高山</a></li>
+                    <li><a href="">雪山</a></li>
+                    <li><a href="">北アルプス</a></li>
+                    <li><a href="">南アルプス</a></li>
+                    <li><a href="">中央アルプス</a></li>
+                    <li><a href="">日本百名山</a></li>
+                    <li><a href="">トレイルランニング</a></li>
+                    <li><a href="">ギア</a></li>
+                    <li><a href="">宿泊</a></li>
+                    <li><a href="">その他</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p><a class="home" href="">HOME</a></p>
+        <p> <small>©puyarinn 2023</small></p>
+    </footer>
+    <p id="page-top"><a href="#"><i class="fa-solid fa-angle-up"></i></a></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>
